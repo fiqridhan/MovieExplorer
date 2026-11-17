@@ -4,6 +4,19 @@ MovieExplorer is an Android movie discovery app powered by The Movie Database (T
 
 Built with Kotlin, Jetpack Compose, Material 3, Hilt, Coroutines, and StateFlow. The app uses a layered domain and data architecture, guarded page-based scrolling, adaptive poster grids, and explicit loading, empty, and error states.
 
+## Android tech stack
+
+- **Language:** Kotlin
+- **UI:** Jetpack Compose, Material 3, adaptive layouts, and Android WebView for YouTube embeds
+- **Architecture:** MVVM, Clean Architecture layers, repository pattern, and use cases
+- **Dependency injection:** Hilt
+- **Async and state:** Kotlin Coroutines and StateFlow
+- **Networking:** OkHttp with TMDB Bearer token authentication and JSON parsing
+- **Images:** Coil
+- **Navigation and lifecycle:** Compose screen routing and lifecycle-aware state collection
+- **Testing:** JUnit, coroutine test utilities, MockWebServer, and Compose UI tests
+- **Build:** Gradle Kotlin DSL, Android Gradle Plugin, and JDK 21
+
 ## API setup
 
 Create a TMDB API Read Access Token, copy `android/local.properties.example` to `android/local.properties`, and set `TMDB_ACCESS_TOKEN`. The local properties file is ignored by Git. The token is bundled into the Android binary, so a backend is required to keep it secret in production.
