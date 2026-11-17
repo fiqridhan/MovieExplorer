@@ -1,0 +1,10 @@
+**/.gradle/
+**/build/
+**/.idea/
+**/.kotlin/
+**/DerivedData/
+**/*.xcuserstate
+**/xcuserdata/
+android/local.properties
+ios/Secrets.xcconfig
+.DS_Store
